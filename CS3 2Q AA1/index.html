@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Carter+One&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #333;
+            margin: 0px;
+        }
+        .topnav {
+            background-color: #111;
+            overflow: hidden;
+            text-align: center;
+            height: 120px;
+            border-bottom: solid #FAE100;
+        }
+        .topnav a {
+            float: left;
+            color: #FAE100;
+            text-align: center;
+            padding-top: 38px;
+            padding-bottom: 50px;
+            text-decoration: none;
+            font-size: 30px;
+            width: 33.33%;
+        }
+        .topnav a:hover {
+            color: #FAE100;
+            text-decoration: underline;
+        }
+        .topnav a.active {
+            color: #FAE100;
+            text-decoration: underline;
+        }
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 90px;
+        }
+        header {
+            background-image: url('images/banner.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            height: 300px;
+        }
+        aside {
+            width: 25%;
+            margin-top: 20px;
+            padding-left: 15px;
+            margin-right: 65px;
+            float: right;
+            border-radius: 10px;
+            background-color: #000;
+            font-family: 'Poppins', sans-serif;
+        }
+        .preview {
+            background-color: #000;
+            height: 300px;
+            text-align: left;
+            color: #fff;
+            font-family: 'Carter One', cursive;
+            width: 68%;
+            border-radius: 10px;
+        }
+        .preview_img {
+            float: left;
+        }
+        .preview_header {
+            padding-top: 40px;
+        }
+        .preview a:hover{
+            color: #fff;
+            text-decoration: underline;
+        }
+        .preview a {
+            color: #fff;
+            text-align: left;
+        }
+        #video {
+            float: left;
+        }
+        .side {
+            color: #fff;
+        }
+        footer {
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/hot-ones-logo.png" alt="Hot Ones Logo" height="100">
+    </header>
+
+    <nav class="topnav" style="font-family: 'Passion One', cursive;">
+        <a class="active" href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="aboutus.html">About Us</a>
+    </nav>
+
+    <aside>
+        <section><h3 class="side">Did you know we serve a small array of snacks like wings, sandwiches and fries which will test your spice tolerance and challenge yourself? Well, the Hot One's Snack Cafe says you do! If you feel you're up to the challenge, then visit us at 9800 Montgomery Blvd NE. We'll be waiting for your visit!</h3></section>
+        <img src="images/wingspreview.jpg" alt="Hot Ones Wings" width="460">
+    </aside> 
+
+    <div class="preview">
+        <video id="video" height="300" autoplay muted loop>
+            <source src="videos/chickenwings.mp4" type="video/mp4">
+            <source src="videos/chickenwings.ogg" type="video/ogg">
+          </video>
+        <h1 class="preview_header">Welcome to Hot Ones!</h1>
+        <h3>The place where you can play around with your spice tolerance with our different snacks  different spice levels!</h3>
+    </div>
+
+    <div class="preview">
+        <img class="preview_img" src="images/mealpreview.jpg" alt="Hot Ones Snacks" height="300">
+        <h1 class="preview_header">Try Out Your Spice Tolerance And</h1>
+        <h3>Turn up the heat and browse through our Menu of Fiery Hot Snacks </h3>
+        <a href="Menu.html"><h3>here!</h3></a>
+    </div>   
+
+    <footer>
+        <hr>
+        <p>Hot Ones Snack Bar &#169; 2022. All rights reserved.</p>
+    </footer>
+</body>    
+</html>
